@@ -32,7 +32,7 @@ typedef unsigned short               UINT16;
 typedef unsigned long                UINT32;
 #endif
 #ifndef PUINT8
-typedef unsigned char               *PUINT8;
+typedef unsigned char              * PUINT8;
 #endif
 #ifndef PUINT16
 typedef unsigned short              *PUINT16;
