@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>4093579147</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ystdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xlocale.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdlib.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\13.ulp</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xlocaleuse.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xmtx.h</file>
+      <file>$TOOLKIT_DIR$\inc\io430x14x.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\Define.h</file>
+      <file>$PROJ_DIR$\AD7711_ZY1.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.r43</file>
+      <file>$PROJ_DIR$\data.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\suart.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ymath.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\math.h</file>
+      <file>$TOOLKIT_DIR$\config\lnk430F149.xcl</file>
+      <file>$PROJ_DIR$\usb\FILE_SYS.H</file>
+      <file>$PROJ_DIR$\Battery.h</file>
+      <file>$PROJ_DIR$\Delete.h</file>
+      <file>$PROJ_DIR$\Demand.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\suart.r43</file>
+      <file>$PROJ_DIR$\usb\CH376INC.H</file>
+      <file>$PROJ_DIR$\suart.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
+      <file>$PROJ_DIR$\AutoZengyi.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\wchar.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xlocale_c.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\spi.r43</file>
+      <file>$PROJ_DIR$\Debug\Exe\13.d43</file>
+      <file>$PROJ_DIR$\usb\HAL.H</file>
+      <file>$PROJ_DIR$\Debug\Obj\FILE_SYS.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xtgmath.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ctype.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\13.pbd</file>
+      <file>$TOOLKIT_DIR$\inc\io430.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\spi.pbi</file>
+      <file>$PROJ_DIR$\Acquisition.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xtls.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\FILE_SYS.r43</file>
+      <file>$PROJ_DIR$\Device_Start.h</file>
+      <file>$PROJ_DIR$\FAT32.h</file>
+      <file>$PROJ_DIR$\usb\FILE_SYS.C</file>
+      <file>$PROJ_DIR$\Help.h</file>
+      <file>$PROJ_DIR$\HT1621.h</file>
+      <file>$PROJ_DIR$\Init.h</file>
+      <file>$PROJ_DIR$\KeyBoard3.h</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\main.h</file>
+      <file>$PROJ_DIR$\MemoryManagement.h</file>
+      <file>$PROJ_DIR$\PiecewiseLinear.h</file>
+      <file>$PROJ_DIR$\PiecewiseLinear_Current.h</file>
+      <file>$PROJ_DIR$\PositionAUTO.h</file>
+      <file>$PROJ_DIR$\SD.H</file>
+      <file>$PROJ_DIR$\Setting.h</file>
+      <file>$PROJ_DIR$\usb\spi.c</file>
+      <file>$PROJ_DIR$\user.h</file>
+      <file>$PROJ_DIR$\Vol_Disp2.h</file>
+      <file>$PROJ_DIR$\Vol_Display.h</file>
+      <file>$PROJ_DIR$\ZengYi.h</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>ULP430</name>
+          <file> 4</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\suart.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 27</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 43 10 6</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 43 10 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\13.d43</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 22 49 5 35 15</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\usb\FILE_SYS.C</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 49</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 23 37 28</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 23 37 28</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 5</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 58 43 10 6 21 19 20 18 0 7 41 11 14 39 47 31 46 1 66 12 16 53 54 13 51 40 2 48 9 3 8 34 33 37 28 23 62 69 59 55 50 64 56 60 61 68 32 67 45 24 26 25</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58 43 10 6 21 19 20 18 0 7 41 11 14 39 47 31 46 1 66 12 16 53 54 13 51 40 2 48 9 3 8 34 33 37 28 23 62 69 59 55 50 64 56 60 61 68 32 67 45 24 26 25</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\usb\spi.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 35</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 43 10 6 37 28</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 43 10 6 37 28</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

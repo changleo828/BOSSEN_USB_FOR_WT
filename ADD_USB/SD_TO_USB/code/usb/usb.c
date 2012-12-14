@@ -13,7 +13,7 @@
 
 
 
-UINT8		buf[512];
+UINT8		buf[64];
 
 void UartInit(void)
 {
@@ -96,11 +96,7 @@ int main( void )
     UINT8       CountT = 0;
     UINT32      U_D;
     PUINT32     pU_D;
-    UINT16      ReqCount;
-    PUINT16     RealCount;
-    
     pU_D = &U_D;
-    
     // Stop watchdog timer to prevent time out reset
     WDTCTL = WDTPW + WDTHOLD;
     P1DIR_bit.P1DIR0 = 1;
@@ -202,9 +198,8 @@ code_start:
         mStopIfError( s );
         printf( "Write ADC data\n" );
         printf( "Current offset ( file point ) is :        ");
-        for(i = 0;i<20;i++){
-            s = sprintf( buf, "%02d.%02d.%02d.%d\xd\xa", 2012 + i/365, 1 + (i / 30) % 12, 1 + i % 30, i ); 
-            
+        for(i = 0;i<1000;i++){
+            s = sprintf( buf, "%02d.%02d.%02d.%d\xd\xa", 2012 + i/365, 1 + (i / 30) % 12, 1 + i % 30, i );  
             /* 将二制制数据格式为一行字符串 */
             s = CH376ByteWrite( buf, s, NULL );  /* 以字节为单位向文件写入数据 */
             /* 有些U盘可能会要求在写数据后等待一会才能继续操作,
@@ -213,11 +208,10 @@ code_start:
             for(j = 0;j<30;j++);
             mStopIfError( s );
             printf( "\b\b\b\b\b\b" );
-            U_D = CH376ReadVar32( VAR_CURRENT_OFFSET );
-            printf( "%6ld", U_D);  
+            printf( "%6ld", CH376ReadVar32( VAR_CURRENT_OFFSET ) );  
             /* 读取当前文件指针 */
         }
-        printf(" buf size = %d\n",strlen(buf));
+        
         printf( "Write end\n" );
         strcpy( buf, "今天的ADC数据到此结束\xd\xa" );
         s = CH376ByteWrite( buf, strlen( buf ), NULL );  /* 以字节为单位向文件写入数据 */
@@ -226,24 +220,7 @@ code_start:
         printf( "Close\n" );
         s = CH376FileClose( TRUE );  /* 关闭文件,自动计算文件长度,以字节为单位写文件,建议让程序库关闭文件以便自动更新文件长度 */
         mStopIfError( s );
-        
-        printf( "Open and read\n" );
-        s = CH376FileOpen( NameBuf );  /* 打开文件,该文件在根目录下 */
-        if ( s == USB_INT_SUCCESS ) {  /* 文件存在并且已经被打开,移动文件指针到尾部以便添加数据 */
-                printf( "File size = %ld\n", CH376GetFileSize( ) );  /* 读取当前文件长度 */
-                printf( "Locate tail\n" );
-                s = CH376ByteLocate( U_D - 15 * 3 );  /* 移到文件的尾部 */
-                mStopIfError( s );
-                
-                ReqCount = 15 * 3;
-                CH376ByteRead( buf, ReqCount, RealCount );
-                buf[*RealCount] = '\0';
-                printf("ReqCount = %d, RealCount = %d\n",ReqCount, *RealCount);
-                printf(" buf :%s |------------\n",buf);
-            printf( "Close\n" );
-            s = CH376FileClose( TRUE );  /* 关闭文件,自动计算文件长度,以字节为单位写文件,建议让程序库关闭文件以便自动更新文件长度 */
-            mStopIfError( s );
-        }
+
         
     do{
         for(i = 0;i<30000;i++);
